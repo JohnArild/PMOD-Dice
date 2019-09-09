@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sun Sep  8 18:45:31 2019
+# Process ID: 8004
+# Current directory: C:/Users/John/Vivado/DiceTest1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8656 C:\Users\John\Vivado\DiceTest1\DiceTest1.xpr
+# Log file: C:/Users/John/Vivado/DiceTest1/vivado.log
+# Journal file: C:/Users/John/Vivado/DiceTest1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/John/Vivado/DiceTest1/DiceTest1.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/John/.Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/John/Vivado/DiceTest1/DiceTest1.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 691.008 ; gain = 122.797
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream
+[Sun Sep  8 18:46:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/John/Vivado/DiceTest1/DiceTest1.runs/synth_1/runme.log
+[Sun Sep  8 18:46:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/John/Vivado/DiceTest1/DiceTest1.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/John/Vivado/DiceTest1/DiceTest1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simDice' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/John/Vivado/DiceTest1/DiceTest1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj simDice_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/John/Vivado/DiceTest1/DiceTest1.srcs/sources_1/new/LedDice_output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDice_output'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/John/Vivado/DiceTest1/DiceTest1.srcs/sources_1/new/eDice.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eDice'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/John/Vivado/DiceTest1/DiceTest1.srcs/sim_1/new/simDice.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'simDice'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/John/Vivado/DiceTest1/DiceTest1.sim/sim_1/behav/xsim'
+"xelab -wto ba6d3e9495974ce4a8f1a9c3f156092a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot simDice_behav xil_defaultlib.simDice -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ba6d3e9495974ce4a8f1a9c3f156092a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot simDice_behav xil_defaultlib.simDice -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture ledoutput of entity xil_defaultlib.LedDice_output [leddice_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.eDice [edice_default]
+Compiling architecture tb of entity xil_defaultlib.simdice
+Built simulation snapshot simDice_behav
+
+****** Webtalk v2019.1.1 (64-bit)
+  **** SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+  **** IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/John/Vivado/DiceTest1/DiceTest1.sim/sim_1/behav/xsim/xsim.dir/simDice_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/John/Vivado/DiceTest1/DiceTest1.sim/sim_1/behav/xsim/xsim.dir/simDice_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Sep  8 18:54:57 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep  8 18:54:57 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 795.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/John/Vivado/DiceTest1/DiceTest1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simDice_behav -key {Behavioral:sim_1:Functional:simDice} -tclbatch {simDice.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simDice.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2100ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simDice_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2100ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 829.508 ; gain = 34.348
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 829.508 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  8 18:55:34 2019...

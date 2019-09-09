@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sun Sep  8 18:45:31 2019
+# Process ID: 8004
+# Current directory: C:/Users/John/Vivado/DiceTest1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8656 C:\Users\John\Vivado\DiceTest1\DiceTest1.xpr
+# Log file: C:/Users/John/Vivado/DiceTest1/vivado.log
+# Journal file: C:/Users/John/Vivado/DiceTest1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/John/Vivado/DiceTest1/DiceTest1.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+launch_simulation
+source simDice.tcl
+close_sim
